@@ -1,1 +1,1 @@
-PORT:4040 URI:mongodb+srv://jorge:Admin1234@cluster0-p3sxk.mongodb.net/test?retryWrites=true npm run dev
+PORT=4040 URI=mongodb+srv://jorge:Admin1234@cluster0-p3sxk.mongodb.net/test?retryWrites=true npm run dev

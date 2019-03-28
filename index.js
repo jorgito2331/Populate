@@ -5,6 +5,8 @@ const db = require('./db/connection')
 const typeDefs = importSchema('./schemas.graphql')
 const resolvers = require('./resolvers')
 
+const PORT = process.env.PORT 
+
 const connection = db.connectDB()
 
 connection.then(() => {
@@ -17,5 +19,5 @@ const schema = makeExecutableSchema({typeDefs, resolvers})
 
 const server = new GraphQLServer({schema})
 
-server.start(() => console.log('Server Connected'))
+server.start({port: PORT}, () => console.log('Server Connected'))
 

@@ -6,8 +6,8 @@ type Query{
 }
 
 type Mutation{
-  CreatePerson(Data: Person): Person
-  CreateHouse(Data: HouseInput): House
+  CreatePerson(data: Person): Person
+  CreateHouse(data: HouseInput): House
 }
 
 type House{
