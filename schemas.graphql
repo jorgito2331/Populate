@@ -1,0 +1,33 @@
+type Query{
+  Person(_id: ID!): Person
+  Persons: [Person]
+  House(path: String!): [House]
+  Houses: [House]
+}
+
+type Mutation{
+  CreatePerson(Data: Person): Person
+  CreateHouse(Data: HouseInput): House
+}
+
+type House{
+  _id: ID
+  path: String!
+  persons:[Person]
+}
+
+input HouseInput{
+  path: String!
+  persons:[Person]
+}
+
+type Person{
+  _id: ID!
+  name: String!
+  lastName: String!
+}
+
+input PersonInput{
+  name: String!
+  lastName: String!
+}

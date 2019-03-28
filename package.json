@@ -1,0 +1,29 @@
+{
+  "name": "populate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -e js,graphql,json index.js",
+    "start": "sh start.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jorgito2331/Populate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jorgito2331/Populate/issues"
+  },
+  "homepage": "https://github.com/jorgito2331/Populate#readme",
+  "dependencies": {
+    "graphql-import": "^0.7.1",
+    "graphql-tools": "^4.0.4",
+    "graphql-yoga": "^1.17.4",
+    "mongoose": "^5.4.20"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
