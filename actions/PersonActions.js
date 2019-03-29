@@ -1,8 +1,8 @@
 const Person = require('../models/PersonSchema')
 
-const getPerson = () => Person.find()
+const getPerson = (_id) => Person.find({_id: _id})
 
-const getAllPerson = (_id) => Person.find({_id: _id})
+const getAllPerson = () => Person.find()
 
 const createPerson = (data) => Person.create(data)
 

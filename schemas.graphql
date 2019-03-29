@@ -6,19 +6,22 @@ type Query{
 }
 
 type Mutation{
-  CreatePerson(data: Person): Person
+  CreatePerson(data: PersonInput): Person
   CreateHouse(data: HouseInput): House
+  AddUserHouse(data: HouseInput): House
+  RemoveUserHouse(data: HouseInput): House
 }
 
 type House{
   _id: ID
   path: String!
-  persons:[Person]
+  persons: [Person]
 }
 
 input HouseInput{
-  path: String!
-  persons:[Person]
+  _id: ID
+  path: String
+  persons:PersonInput
 }
 
 type Person{
@@ -28,6 +31,7 @@ type Person{
 }
 
 input PersonInput{
-  name: String!
-  lastName: String!
+  _id: ID
+  name: String
+  lastName: String
 }

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon -e js,graphql,json index.js",
+    "dev": "node index.js",
     "start": "sh start.sh"
   },
   "repository": {
